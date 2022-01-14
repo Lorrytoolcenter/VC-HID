@@ -2,7 +2,7 @@
 
 #from vc_hid import vc_hid as hid
 import vc_hid  
-
+vid="046D"
 pid="89a"
 pid1="867"
 setID="28"
@@ -23,7 +23,12 @@ if(__name__)=="__main__":
     print(passflag,data)
    
 
+    passflag,data=test.hidset_vpid(vid,pid,setID,controlID,readnumber,anotherCMD)
+    print(passflag,data)
 
+    
+    passflag,data=test.readhid_vpid(vid,pid,readID,controlID,readnumber)  
+    print(passflag,data)
 
 
 
