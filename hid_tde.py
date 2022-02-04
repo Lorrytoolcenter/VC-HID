@@ -44,6 +44,9 @@ if(__name__)=="__main__":
     
     passflag,data=test.readhid_vpid(vid,pid,readID,controlID,readnumber)  
     print(passflag,data)
+	
+    passflag,data=test.readhid_vpid_all(vid,pid,readID,readnumber)  
+    print(passflag,data)
 
     
 ##    passflag,data=test.hidset(pid,setID,controlID,readnumber,anotherCMD)

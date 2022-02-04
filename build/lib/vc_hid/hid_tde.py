@@ -31,7 +31,8 @@ if(__name__)=="__main__":
     print(passflag,data)
 
 
-
+    passflag,data=test.readhid_vpid_all(vid,pid,readID,readnumber)  
+    print(passflag,data)
 
 
 
